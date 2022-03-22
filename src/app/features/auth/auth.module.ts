@@ -12,7 +12,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RegisterComponent } from './register/register.component';
 import { ProfileComponent } from './profile/profile.component';
 import { MatMenuModule } from '@angular/material/menu';
-import { AuthRoutingModule } from './auth-routing.module';
 
 
 
@@ -20,7 +19,6 @@ import { AuthRoutingModule } from './auth-routing.module';
   declarations: [LoginComponent, RegisterComponent, ProfileComponent],
   imports: [
     BrowserModule,
-    AuthRoutingModule,
     CommonModule,
     MatMenuModule,
     MatFormFieldModule,
