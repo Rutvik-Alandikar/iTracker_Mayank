@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 
-
 /* Routing */
 import { AppRoutingModule } from './app-routing.module';
 
@@ -14,12 +13,11 @@ import { MatCardModule } from '@angular/material/card';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatFormFieldModule } from '@angular/material/form-field';
 
-
 /* FormsModule */
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 /* Angular Flex Layout */
-import { FlexLayoutModule } from "@angular/flex-layout";
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 /* Components */
 
@@ -29,12 +27,8 @@ import { LoginComponent } from './features/auth/login/login.component';
 import { RegisterComponent } from './features/auth/register/register.component';
 import { ProfileComponent } from './features/auth/profile/profile.component';
 
-
-
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -47,11 +41,15 @@ import { ProfileComponent } from './features/auth/profile/profile.component';
     ReactiveFormsModule,
     FormsModule,
     AuthModule,
-    FlexLayoutModule
+    FlexLayoutModule,
   ],
   providers: [],
-  bootstrap: [AppComponent,LoginComponent,RegisterComponent,ProfileComponent],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA]
+  bootstrap: [
+    AppComponent,
+    LoginComponent,
+    RegisterComponent,
+    ProfileComponent,
+  ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
-
-export class AppModule { }
+export class AppModule {}

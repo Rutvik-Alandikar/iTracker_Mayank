@@ -20,6 +20,7 @@ import { MatMenuModule } from '@angular/material/menu';
   imports: [
     BrowserModule,
     CommonModule,
+    AppRoutingModule,
     MatMenuModule,
     MatFormFieldModule,
     MatCardModule,

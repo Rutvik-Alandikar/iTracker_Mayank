@@ -1,5 +1,4 @@
 import { Component} from '@angular/core';
-import { NgModule , CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 @Component({
   selector: 'app-register',
@@ -7,7 +6,7 @@ import { NgModule , CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent{
-  Roles: any = ['Admin', 'Recruiter','Panelist'];
+  //Roles: any = ['Admin', 'Recruiter','Panelist'];
   constructor() { }
 
   ngOnInit(): void {

@@ -1,17 +1,13 @@
-<mat-toolbar color="primary" class="app-header">
-  <div>
-    <a
-      mat-flat-button
-      href="https://www.accolite.com/"
-      color="primary"
-      >Accolite iTracker</a
-    >
-  </div>
+<!-- Toolbar
+<mat-toolbar color="primary" class="app-header" *ngIf="!isLoggedIn">
+  <div><a mat-flat-button href="https://www.accolite.com/" color="primary" target="_blank">Accolite iTracker</a></div>
   <span class="nav-tool-items">
-
   </span>
+
 </mat-toolbar>
-<div class="login-wrapper" fxLayout="row" fxLayoutAlign="center center">
+
+<div class="login-wrapper" fxLayout="row" fxLayoutAlign="center center" *ngIf="!isLoggedIn">
+
   <mat-card class="box">
     <mat-card-header>
       <mat-card-title>Log in</mat-card-title>
@@ -30,7 +26,6 @@
             required
             #username="ngModel"
           />
-
         </mat-form-field>
 
         <mat-form-field class="example-full-width">
@@ -44,7 +39,6 @@
             required
             #password="ngModel"
           />
-
         </mat-form-field>
       </mat-card-content>
       <button
@@ -56,10 +50,21 @@
       >
         Log in
       </button>
+      <a *ngIf="isLoggedIn" routerLink="profile" routerLinkActive="active"></a>
+
       <h1 style="text-align:center;"></h1>
       <h4 style="text-align:center;">OR</h4>
-      <a mat-button mat-raised-button color="warn" class="btn-block" (click)="goRegister()">Register</a>
-      <div *ngIf="isLoggedIn" routerLink="profile2" routerLinkActive="active" ></div>
-</form>
+      <a mat-button mat-raised-button color="warn" class="btn-block" routerLink="register2" routerLinkActive="active">Register</a>
+
+    </form>
   </mat-card>
 </div>
+
+<app-login></app-login>
+<router-outlet></router-outlet>
+
+<app-login *ngIf="!isLoggedIn"></app-login>
+<app-profile *ngIf="isLoggedIn"></app-profile>
+
+<router-outlet></router-outlet>
+-->

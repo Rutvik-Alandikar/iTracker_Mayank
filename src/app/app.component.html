@@ -1,18 +1,31 @@
-<!-- Toolbar -->
+<!-- Toolbar
 <mat-toolbar color="primary" class="app-header">
-  <div><a mat-flat-button href="https://www.accolite.com/" color="primary" target="_blank">Accolite iTracker</a></div>
+  <div>
+    <a
+      mat-flat-button
+      href="https://www.accolite.com/"
+      color="primary"
+      target="_blank"
+      >Accolite iTracker</a
+    >
+  </div>
   <span class="nav-tool-items">
-    <button mat-fab color="warn" [matMenuTriggerFor]="menu"><mat-icon>account_circle</mat-icon></button>
+    <button mat-fab color="warn" [matMenuTriggerFor]="menu">
+      <mat-icon>account_circle</mat-icon>
+    </button>
     <mat-menu #menu="matMenu">
-      <a mat-menu-item routerLink="profile" routerLinkActive="active">View Profile</a>
+      <a mat-menu-item routerLink="profile" routerLinkActive="active"
+        >View Profile</a
+      >
       <a mat-menu-item routerLink="login" routerLinkActive="active">Log in</a>
-      <a mat-menu-item routerLink="register" routerLinkActive="active">Register</a>
+      <a mat-menu-item routerLink="register" routerLinkActive="active"
+        >Register</a
+      >
       <a mat-menu-item routerLink="login" routerLinkActive="active">Log Out</a>
     </mat-menu>
   </span>
-
 </mat-toolbar>
+-->
 <div class="login-wrapper" fxLayout="row" fxLayoutAlign="center center">
   <router-outlet></router-outlet>
 </div>
-

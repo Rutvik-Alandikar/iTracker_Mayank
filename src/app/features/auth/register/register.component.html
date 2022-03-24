@@ -1,3 +1,17 @@
+<mat-toolbar color="primary" class="app-header">
+  <div>
+    <a
+      mat-flat-button
+      href="https://www.accolite.com/"
+      color="primary"
+      target="_blank"
+      >Accolite iTracker</a
+    >
+  </div>
+  <span class="nav-tool-items">
+
+  </span>
+</mat-toolbar>
 <div class="login-wrapper" fxLayout="row" fxLayoutAlign="center center">
   <mat-card class="box">
     <mat-card-header>
@@ -18,7 +32,10 @@
         <mat-form-field class="example-full-width">
           <input matInput placeholder="Password">
         </mat-form-field>
-
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Confirm Password">
+        </mat-form-field>
+        <!--
         <mat-form-field class="example-full-width">
           <mat-label>Choose a role...</mat-label>
           <mat-select>
@@ -26,7 +43,7 @@
             </mat-option>
           </mat-select>
         </mat-form-field>
-
+        -->
       </mat-card-content>
       <button mat-button mat-raised-button color="warn" class="btn-block">Register</button>
       </form>
